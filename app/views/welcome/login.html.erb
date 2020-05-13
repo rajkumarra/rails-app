@@ -1,0 +1,13 @@
+
+<div class="imgcontainer">
+  <img class="image" src="/assets/kumar.jpg">
+  </div>
+	<div id="box">
+     <span id="button">Login</span>
+	<%= form_tag '/welcome/login_submit' do %>
+	      <p><input type="text" placeholder="username" name="username"/></p>
+	      <p><input type="password" placeholder="password" name="password" /></p>
+	      <p><input type="submit" value="Sign in" /></p>
+      <% end %>
+</div>
+

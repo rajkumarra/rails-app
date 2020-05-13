@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body class="<%= action_name %>">
+    <div class="head">
+      <h1>Top Tutorials</h1>
+      <a href="about">About</a>
+      <a href="shop">Shop</a>
+      <a href="about">Contact</a>
+      <a href="Github">GitHub</a>
+      <a href="/welcome/login">Login</a>
+    </div>
+     <div class="Home">
+      <p><a href="/welcome/index"><button class="btn"><i class="fa fa-home"></i>Home</button> </a></p>
+</div>
+    <div class="clear"></div>
+    <%= yield %>
+  </body>
+</html>
